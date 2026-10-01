@@ -24,11 +24,18 @@ song_list = [
 max_row_cnt = 4
 max_bingo_cnt = 2
 
+number_of_sheets = 120
+
 results = []
+shorter_song_list = song_list
+shorter_stats = {
+    "song_cnt": len(song_list),
+    "row_stats": {"count": 0, "number_of_songs": []},
+    "bingo_stats": {"count": 0, "number_of_songs": []},
+}
 
 for i in tqdm(range(1000), desc="Monte Carlo"):
 
-    shuffled_song_list = random.sample(song_list, len(song_list))
     sheets = [
         [
             [
@@ -39,6 +46,8 @@ for i in tqdm(range(1000), desc="Monte Carlo"):
         ]
         for sheet in data["sheets"]
     ]
+    shuffled_sheets = random.sample(sheets, number_of_sheets)
+    shuffled_song_list = random.sample(song_list, len(song_list))
 
     song_cnt = 0
     row_stats = {"count": 0, "number_of_songs": []}
@@ -46,7 +55,7 @@ for i in tqdm(range(1000), desc="Monte Carlo"):
 
     for played in tqdm(shuffled_song_list, desc=f"Iteration {i}", leave=False):
         for sheet in tqdm(
-            sheets, desc=f"{played['artist']} - {played['title']}", leave=False
+            shuffled_sheets, desc=f"{played['artist']} - {played['title']}", leave=False
         ):
             played_in_sheet = False
             for row in sheet:
@@ -79,9 +88,28 @@ for i in tqdm(range(1000), desc="Monte Carlo"):
     results.append(
         {"song_cnt": song_cnt, "row_stats": row_stats, "bingo_stats": bingo_stats}
     )
+    if (
+        song_cnt < shorter_stats["song_cnt"]
+        and len(row_stats["number_of_songs"]) == len(set(row_stats["number_of_songs"]))
+        and len(bingo_stats["number_of_songs"])
+        == len(set(bingo_stats["number_of_songs"]))
+    ):
+        shorter_stats = {
+            "song_cnt": song_cnt,
+            "row_stats": row_stats,
+            "bingo_stats": bingo_stats,
+        }
+        shorter_song_list = shuffled_song_list
+
+print(f"Shortest Song list: {shorter_stats['song_cnt']} songs")
+print(f"Rows at songs: {shorter_stats['row_stats']['number_of_songs']}")
+print(f"Bingos at songs: {shorter_stats['bingo_stats']['number_of_songs']}")
 
 with open("results.json", "w") as f:
     json.dump(results, f, indent=2)
+
+with open("shorter_song_list.json", "w") as f:
+    json.dump(shorter_song_list, f, indent=2)
 
 fig, ((ax0, ax1)) = plt.subplots(nrows=1, ncols=2)
 
