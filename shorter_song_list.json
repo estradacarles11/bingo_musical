@@ -1,183 +1,87 @@
 [
   {
-    "artist": "Celia Cruz",
-    "title": "La Vida Es un Carnaval"
+    "artist": "Vengaboys",
+    "title": "Boom Boom Boom Boom"
   },
   {
-    "artist": "Manel",
-    "title": "Benvolgut"
-  },
-  {
-    "artist": "Los del Rio",
-    "title": "Macarena"
-  },
-  {
-    "artist": "A-ha",
-    "title": "Take on Me"
-  },
-  {
-    "artist": "The Cranberries",
-    "title": "Zombie"
-  },
-  {
-    "artist": "Bon Jovi",
-    "title": "Livin' on a Prayer"
-  },
-  {
-    "artist": "Rosalia",
-    "title": "Despecha"
-  },
-  {
-    "artist": "Whitney Houston",
-    "title": "I Wanna Dance with Somebody"
-  },
-  {
-    "artist": "The Police",
-    "title": "Every Breath You Take"
-  },
-  {
-    "artist": "Cyndi Lauper",
-    "title": "Girls Just Want to Have Fun"
-  },
-  {
-    "artist": "Terapia de Shock",
-    "title": "Sense Tu"
-  },
-  {
-    "artist": "Don Omar",
-    "title": "Dale Don Dale"
-  },
-  {
-    "artist": "Gossos",
-    "title": "Corren"
-  },
-  {
-    "artist": "Zea Mays",
-    "title": "Negua Joan Da Ta"
-  },
-  {
-    "artist": "Gigi D'Agostino",
-    "title": "L'Amour Toujours"
-  },
-  {
-    "artist": "Olivia Newton-John",
-    "title": "You're the One That I Want"
-  },
-  {
-    "artist": "Stay Homes & The Tyets",
-    "title": "La Platja"
-  },
-  {
-    "artist": "Mago de Oz",
-    "title": "Fiesta Pagana"
-  },
-  {
-    "artist": "Beth ",
-    "title": "Dime"
-  },
-  {
-    "artist": "Formula Abierta",
-    "title": "Te Quiero Mas"
-  },
-  {
-    "artist": "Buhos o ETS",
-    "title": "Volcans /Sumedia"
-  },
-  {
-    "artist": "Camela",
-    "title": "Cuando Zarpa el Amor"
-  },
-  {
-    "artist": "Egan",
-    "title": "Loiolan Jai Jai"
-  },
-  {
-    "artist": "Gatibu",
-    "title": "Musturrek Sartunde"
-  },
-  {
-    "artist": "Kortatu",
-    "title": "Sarri, Sarri"
-  },
-  {
-    "artist": "Roxette",
-    "title": "It Must Have Been Love"
-  },
-  {
-    "artist": "Pimpinela",
-    "title": "Olvidame y Pega la Vuelta"
+    "artist": "Hertzainak",
+    "title": "Aitormena"
   },
   {
     "artist": "Queen",
     "title": "Don't Stop Me Now"
   },
   {
-    "artist": "Hemendik At",
-    "title": "Eskutitza"
+    "artist": "Lax'n'Busto",
+    "title": "Llen\u00e7at"
   },
   {
-    "artist": "Sau",
-    "title": "Boig per Tu"
+    "artist": "Gatibu",
+    "title": "Musturrek Sartunde"
   },
   {
-    "artist": "King Africa",
-    "title": "La Bomba"
-  },
-  {
-    "artist": "Su Ta Gar",
-    "title": "Jo Ta Ke"
-  },
-  {
-    "artist": "Chayanne",
-    "title": "Salom\u00e9"
-  },
-  {
-    "artist": "Carlos Vives",
-    "title": "Volvi a Nacer"
-  },
-  {
-    "artist": "Obrint Pas",
-    "title": "La Flama/Som"
-  },
-  {
-    "artist": "Joan Dausa",
-    "title": "Jo mai mai"
-  },
-  {
-    "artist": "Maria Isabel",
-    "title": "Antes Muerta Que Sencilla"
-  },
-  {
-    "artist": "Chino & Nacho",
-    "title": "Ni\u00f1a Bonita"
-  },
-  {
-    "artist": "Sopa de Cabra",
-    "title": "L\u2019Empord\u00e0"
-  },
-  {
-    "artist": "Stay Homes",
-    "title": "The Bright Side"
-  },
-  {
-    "artist": "La Fumiga",
-    "title": "Ja Dormir\u00e9"
+    "artist": "Haddaway",
+    "title": "What Is Love"
   },
   {
     "artist": "Alaitz eta Maider",
     "title": "Amets Bat"
   },
   {
-    "artist": "Backstreet Boys",
-    "title": "I Want It That Way"
+    "artist": "The Cranberries",
+    "title": "Zombie"
+  },
+  {
+    "artist": "La Gossa Sorda",
+    "title": "Esbarzers"
+  },
+  {
+    "artist": "Cher",
+    "title": "Believe"
+  },
+  {
+    "artist": "Beth ",
+    "title": "Dime"
+  },
+  {
+    "artist": "Sau",
+    "title": "Boig per Tu"
+  },
+  {
+    "artist": "Egan",
+    "title": "Loiolan Jai Jai"
+  },
+  {
+    "artist": "Stay Homes",
+    "title": "The Bright Side"
+  },
+  {
+    "artist": "Formula Abierta",
+    "title": "Te Quiero Mas"
+  },
+  {
+    "artist": "Gozategi",
+    "title": "Kalanbreak"
+  },
+  {
+    "artist": "Sorotan Bele",
+    "title": "Arratsalde Honetan"
+  },
+  {
+    "artist": "Els amics de les Arts",
+    "title": "Jean Luc/4-3-3"
+  },
+  {
+    "artist": "Gossos",
+    "title": "Corren"
+  },
+  {
+    "artist": "Bonnie Tyler",
+    "title": "Total Eclipse of the Heart"
   },
   {
     "artist": "Zoo",
     "title": "Tobogan"
-  },
-  {
-    "artist": "Chenoa",
-    "title": "Cuando Tu Vas"
   },
   {
     "artist": "Ken Zazpi",
@@ -188,195 +92,291 @@
     "title": "Jenifer"
   },
   {
-    "artist": "The Tyets",
-    "title": "Coti x Coti"
-  },
-  {
-    "artist": "Bill Medley & Jennifer Warnes",
-    "title": "(I've Had) The Time of My Life"
-  },
-  {
-    "artist": "Karol G",
-    "title": "Si Antes Te Hubiera Conocido"
-  },
-  {
-    "artist": "Shakira",
-    "title": "Tortura"
-  },
-  {
-    "artist": "Txarango",
-    "title": "Una Lluna a l'Aigua"
-  },
-  {
-    "artist": "Maixa eta Ixiar",
-    "title": "Bexamela eta Pastela"
-  },
-  {
-    "artist": "Paulina Rubio",
-    "title": "Y Yo Sigo Aqui"
-  },
-  {
-    "artist": "Figa Flawas",
-    "title": "La Marina Sta Morena"
-  },
-  {
-    "artist": "La Gossa Sorda",
-    "title": "Esbarzers"
-  },
-  {
-    "artist": "Whigfield",
-    "title": "Saturday Night"
-  },
-  {
-    "artist": "Lax'n'Busto",
-    "title": "Llen\u00e7at"
-  },
-  {
-    "artist": "En Tol Sarmiento & Buhos",
-    "title": "T'he Trobat a Faltar"
-  },
-  {
-    "artist": "Alaska y Dinarama",
-    "title": "Ni Tu Ni Nadie"
-  },
-  {
-    "artist": "Gozategi",
-    "title": "Kalanbreak"
-  },
-  {
-    "artist": "Rocio Durcal",
-    "title": "Me Gustas Mucho"
-  },
-  {
-    "artist": "Pedrito Fernandez",
-    "title": "La Mochila Azul"
-  },
-  {
-    "artist": "Latzen",
-    "title": "Laztana"
-  },
-  {
-    "artist": "Cher",
-    "title": "Believe"
-  },
-  {
-    "artist": "Els amics de les Arts",
-    "title": "Jean Luc/4-3-3"
-  },
-  {
-    "artist": "Daddy Yankee",
-    "title": "Gasolina"
-  },
-  {
-    "artist": "Hertzainak",
-    "title": "Pakean Utzi Arte"
-  },
-  {
-    "artist": "Luis Fonsi",
-    "title": "Despacito"
-  },
-  {
-    "artist": "Bonnie Tyler",
-    "title": "Total Eclipse of the Heart"
-  },
-  {
-    "artist": "ABBA",
-    "title": "Dancing Queen"
-  },
-  {
-    "artist": "Britney Spears",
-    "title": "...Baby One More Time"
-  },
-  {
-    "artist": "Itoiz",
-    "title": "Lau Teilatu"
-  },
-  {
-    "artist": "Lluis Llach",
-    "title": "L\u2019estaca"
-  },
-  {
-    "artist": "Vengaboys",
-    "title": "Boom Boom Boom Boom"
-  },
-  {
-    "artist": "Sorotan Bele",
-    "title": "Arratsalde Honetan"
-  },
-  {
-    "artist": "Aqua",
-    "title": "Barbie Girl"
-  },
-  {
-    "artist": "Haddaway",
-    "title": "What Is Love"
-  },
-  {
-    "artist": "Bryan Adams",
-    "title": "Summer of '69"
+    "artist": "Gloria Gaynor",
+    "title": "I Will Survive"
   },
   {
     "artist": "Huntza",
     "title": "Aldapan Gora"
   },
   {
+    "artist": "Olivia Newton-John",
+    "title": "You're the One That I Want"
+  },
+  {
     "artist": "Alphaville",
     "title": "Forever Young"
   },
   {
-    "artist": "Hertzainak",
-    "title": "Aitormena"
+    "artist": "King Africa",
+    "title": "La Bomba"
+  },
+  {
+    "artist": "Bon Jovi",
+    "title": "Livin' on a Prayer"
   },
   {
     "artist": "Las Ketchup",
     "title": "Aserej\u00e9"
   },
   {
-    "artist": "Zetak",
-    "title": "Eguzkiloreak"
-  },
-  {
-    "artist": "Oques Grasses",
-    "title": "La Gent Que Estimo"
-  },
-  {
-    "artist": "Berri Txarrak",
-    "title": "Katedral Bat"
-  },
-  {
-    "artist": "Laja eta Landakanda",
-    "title": "Azkoitiri"
-  },
-  {
-    "artist": "Aventura",
-    "title": "Obsesion"
-  },
-  {
-    "artist": "Gloria Gaynor",
-    "title": "I Will Survive"
-  },
-  {
-    "artist": "Els Pets",
-    "title": "Bon Dia"
-  },
-  {
-    "artist": "Spice Girls",
-    "title": "Wannabe"
-  },
-  {
-    "artist": "Sabrina",
-    "title": "Boys Boys Boys"
+    "artist": "Mago de Oz",
+    "title": "Fiesta Pagana"
   },
   {
     "artist": "Wisin y Yandel",
     "title": "El Telefono"
   },
   {
+    "artist": "Chino & Nacho",
+    "title": "Ni\u00f1a Bonita"
+  },
+  {
+    "artist": "Su Ta Gar",
+    "title": "Jo Ta Ke"
+  },
+  {
+    "artist": "Kortatu",
+    "title": "Sarri, Sarri"
+  },
+  {
+    "artist": "Hertzainak",
+    "title": "Pakean Utzi Arte"
+  },
+  {
+    "artist": "Latzen",
+    "title": "Laztana"
+  },
+  {
+    "artist": "A-ha",
+    "title": "Take on Me"
+  },
+  {
+    "artist": "Whigfield",
+    "title": "Saturday Night"
+  },
+  {
+    "artist": "Gigi D'Agostino",
+    "title": "L'Amour Toujours"
+  },
+  {
+    "artist": "Maixa eta Ixiar",
+    "title": "Bexamela eta Pastela"
+  },
+  {
+    "artist": "Carlos Vives",
+    "title": "Volvi a Nacer"
+  },
+  {
+    "artist": "Rocio Durcal",
+    "title": "Me Gustas Mucho"
+  },
+  {
+    "artist": "Daddy Yankee",
+    "title": "Gasolina"
+  },
+  {
+    "artist": "Alaska y Dinarama",
+    "title": "Ni Tu Ni Nadie"
+  },
+  {
+    "artist": "Itoiz",
+    "title": "Lau Teilatu"
+  },
+  {
+    "artist": "Cyndi Lauper",
+    "title": "Girls Just Want to Have Fun"
+  },
+  {
+    "artist": "Los del Rio",
+    "title": "Macarena"
+  },
+  {
+    "artist": "Spice Girls",
+    "title": "Wannabe"
+  },
+  {
     "artist": "Sonia y Selena",
     "title": "Yo Quiero Bailar"
   },
   {
+    "artist": "ABBA",
+    "title": "Dancing Queen"
+  },
+  {
+    "artist": "Aqua",
+    "title": "Barbie Girl"
+  },
+  {
+    "artist": "Chayanne",
+    "title": "Salom\u00e9"
+  },
+  {
+    "artist": "Whitney Houston",
+    "title": "I Wanna Dance with Somebody"
+  },
+  {
+    "artist": "Laja eta Landakanda",
+    "title": "Azkoitiri"
+  },
+  {
+    "artist": "Stay Homes & The Tyets",
+    "title": "La Platja"
+  },
+  {
+    "artist": "The Police",
+    "title": "Every Breath You Take"
+  },
+  {
+    "artist": "Joan Dausa",
+    "title": "Jo mai mai"
+  },
+  {
+    "artist": "Obrint Pas",
+    "title": "La Flama/Som"
+  },
+  {
+    "artist": "Maria Isabel",
+    "title": "Antes Muerta Que Sencilla"
+  },
+  {
+    "artist": "Celia Cruz",
+    "title": "La Vida Es un Carnaval"
+  },
+  {
+    "artist": "La Fumiga",
+    "title": "Ja Dormir\u00e9"
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "...Baby One More Time"
+  },
+  {
+    "artist": "Zetak",
+    "title": "Eguzkiloreak"
+  },
+  {
+    "artist": "The Tyets",
+    "title": "Coti x Coti"
+  },
+  {
+    "artist": "Paulina Rubio",
+    "title": "Y Yo Sigo Aqui"
+  },
+  {
+    "artist": "Camela",
+    "title": "Cuando Zarpa el Amor"
+  },
+  {
+    "artist": "Oques Grasses",
+    "title": "La Gent Que Estimo"
+  },
+  {
+    "artist": "Backstreet Boys",
+    "title": "I Want It That Way"
+  },
+  {
+    "artist": "Don Omar",
+    "title": "Dale Don Dale"
+  },
+  {
+    "artist": "Lluis Llach",
+    "title": "L\u2019estaca"
+  },
+  {
+    "artist": "Karol G",
+    "title": "Si Antes Te Hubiera Conocido"
+  },
+  {
+    "artist": "Terapia de Shock",
+    "title": "Sense Tu"
+  },
+  {
+    "artist": "Sabrina",
+    "title": "Boys Boys Boys"
+  },
+  {
+    "artist": "Shakira",
+    "title": "Tortura"
+  },
+  {
+    "artist": "Sopa de Cabra",
+    "title": "L\u2019Empord\u00e0"
+  },
+  {
+    "artist": "Luis Fonsi",
+    "title": "Despacito"
+  },
+  {
+    "artist": "Txarango",
+    "title": "Una Lluna a l'Aigua"
+  },
+  {
+    "artist": "Bill Medley & Jennifer Warnes",
+    "title": "(I've Had) The Time of My Life"
+  },
+  {
+    "artist": "En Tol Sarmiento & Buhos",
+    "title": "T'he Trobat a Faltar"
+  },
+  {
+    "artist": "Zea Mays",
+    "title": "Negua Joan Da Ta"
+  },
+  {
+    "artist": "Els Pets",
+    "title": "Bon Dia"
+  },
+  {
+    "artist": "Chenoa",
+    "title": "Cuando Tu Vas"
+  },
+  {
+    "artist": "Roxette",
+    "title": "It Must Have Been Love"
+  },
+  {
+    "artist": "Pedrito Fernandez",
+    "title": "La Mochila Azul"
+  },
+  {
+    "artist": "Hemendik At",
+    "title": "Eskutitza"
+  },
+  {
+    "artist": "Figa Flawas",
+    "title": "La Marina Sta Morena"
+  },
+  {
+    "artist": "Aventura",
+    "title": "Obsesion"
+  },
+  {
     "artist": "Tina Turner",
     "title": "The Best"
+  },
+  {
+    "artist": "Pimpinela",
+    "title": "Olvidame y Pega la Vuelta"
+  },
+  {
+    "artist": "Buhos o ETS",
+    "title": "Volcans /Sumedia"
+  },
+  {
+    "artist": "Manel",
+    "title": "Benvolgut"
+  },
+  {
+    "artist": "Bryan Adams",
+    "title": "Summer of '69"
+  },
+  {
+    "artist": "Berri Txarrak",
+    "title": "Katedral Bat"
+  },
+  {
+    "artist": "Rosalia",
+    "title": "Despecha"
   }
 ]
