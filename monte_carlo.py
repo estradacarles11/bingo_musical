@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
+import logging
+import sys
 
 JSON_PATH = Path("extract_chatgpt.json")
 
@@ -28,13 +30,14 @@ number_of_sheets = 120
 
 results = []
 shorter_song_list = song_list
+winning_sheets = [{"sheet_number": 0, "songs": []}]
 shorter_stats = {
     "song_cnt": len(song_list),
     "row_stats": {"count": 0, "number_of_songs": []},
     "bingo_stats": {"count": 0, "number_of_songs": []},
 }
 
-for i in tqdm(range(1000), desc="Monte Carlo"):
+for i in tqdm(range(10000), desc="Monte Carlo"):
 
     sheets = [
         [
@@ -50,15 +53,23 @@ for i in tqdm(range(1000), desc="Monte Carlo"):
     shuffled_song_list = random.sample(song_list, len(song_list))
 
     song_cnt = 0
-    row_stats = {"count": 0, "number_of_songs": []}
-    bingo_stats = {"count": 0, "number_of_songs": []}
+    row_stats = {"count": 0, "number_of_songs": [], "extra_winning_sheet_numbers": []}
+    bingo_stats = {"count": 0, "number_of_songs": [], "extra_winning_sheet_numbers": []}
+    bingo_sheets = []
 
-    for played in tqdm(shuffled_song_list, desc=f"Iteration {i}", leave=False):
-        for sheet in tqdm(
-            shuffled_sheets, desc=f"{played['artist']} - {played['title']}", leave=False
-        ):
+    # for played in tqdm(shuffled_song_list, desc=f"Iteration {i}", leave=False):
+    #     for i in tqdm(
+    #         range(len(sheets)),
+    #         desc=f"{played['artist']} - {played['title']}",
+    #         leave=False,
+    #     ):    # for played in tqdm(shuffled_song_list, desc=f"Iteration {i}", leave=False):
+    for played in shuffled_song_list:
+        for i in range(
+            len(sheets)
+        ):  # for played in tqdm(shuffled_song_list, desc=f"Iteration {i}", leave=False):
+            sheet_in_shuffled = sheets[i] in shuffled_sheets
             played_in_sheet = False
-            for row in sheet:
+            for row in sheets[i]:
                 played_in_row = False
                 for song in row:
                     if (
@@ -74,13 +85,20 @@ for i in tqdm(range(1000), desc="Monte Carlo"):
                     and row_stats["count"] < max_row_cnt
                     and all([song["played"] for song in row])
                 ):
-                    row_stats["count"] += 1
                     row_stats["number_of_songs"].append(song_cnt + 1)
+                    if sheet_in_shuffled:
+                        row_stats["count"] += 1
+                    else:
+                        row_stats["extra_winning_sheet_numbers"].append(i)
             if played_in_sheet and all(
-                [song["played"] for row in sheet for song in row]
+                [song["played"] for row in sheets[i] for song in row]
             ):
-                bingo_stats["count"] += 1
                 bingo_stats["number_of_songs"].append(song_cnt + 1)
+                if sheet_in_shuffled:
+                    bingo_stats["count"] += 1
+                    bingo_sheets.append(i)
+                else:
+                    bingo_stats["extra_winning_sheet_numbers"].append(i)
         song_cnt += 1
         if bingo_stats["count"] >= max_bingo_cnt:
             break
@@ -93,6 +111,8 @@ for i in tqdm(range(1000), desc="Monte Carlo"):
         and len(row_stats["number_of_songs"]) == len(set(row_stats["number_of_songs"]))
         and len(bingo_stats["number_of_songs"])
         == len(set(bingo_stats["number_of_songs"]))
+        and len(row_stats["extra_winning_sheet_numbers"]) == 0
+        and len(bingo_stats["extra_winning_sheet_numbers"]) == 0
     ):
         shorter_stats = {
             "song_cnt": song_cnt,
@@ -100,10 +120,33 @@ for i in tqdm(range(1000), desc="Monte Carlo"):
             "bingo_stats": bingo_stats,
         }
         shorter_song_list = shuffled_song_list
+        winning_sheets = [
+            {"sheet_number": i + 1, "songs": sheets[i]} for i in bingo_sheets
+        ]
 
-print(f"Shortest Song list: {shorter_stats['song_cnt']} songs")
-print(f"Rows at songs: {shorter_stats['row_stats']['number_of_songs']}")
-print(f"Bingos at songs: {shorter_stats['bingo_stats']['number_of_songs']}")
+if len(winning_sheets) == max_bingo_cnt:
+    targets = logging.StreamHandler(sys.stdout), logging.FileHandler("results.log")
+    logging.basicConfig(format="%(message)s", level=logging.INFO, handlers=targets)
+
+    logging.info(f"Shortest Song list: {shorter_stats['song_cnt']} songs")
+    logging.info(f"Rows at songs: {shorter_stats['row_stats']['number_of_songs']}")
+    logging.info(f"Bingos at songs: {shorter_stats['bingo_stats']['number_of_songs']}")
+    for i, sheet in enumerate(winning_sheets):
+        logging.info("")
+        logging.info(f"Winning Sheet {i + 1}: {sheet['sheet_number']}")
+        logging.info(
+            "+--------------------+--------------------+--------------------+--------------------+--------------------+"
+        )
+        for row in sheet["songs"]:
+            logging.info(
+                f"| {row[0]['artist'].ljust(18)[:18]} | {row[1]['artist'].ljust(18)[:18]} | {row[2]['artist'].ljust(18)[:18]} | {row[3]['artist'].ljust(18)[:18]} | {row[4]['artist'].ljust(18)[:18]} |"
+            )
+            logging.info(
+                f"| {row[0]['title'].ljust(18)[:18]} | {row[1]['title'].ljust(18)[:18]} | {row[2]['title'].ljust(18)[:18]} | {row[3]['title'].ljust(18)[:18]} | {row[4]['title'].ljust(18)[:18]} |"
+            )
+            logging.info(
+                "+--------------------+--------------------+--------------------+--------------------+--------------------+"
+            )
 
 with open("results.json", "w") as f:
     json.dump(results, f, indent=2)
